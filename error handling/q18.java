@@ -1,0 +1,21 @@
+// Develop a recursive algorithm implemented in Java that traverses or manipulates
+// arrays. Introduce scenarios where the recursion reaches beyond the bounds of the array,
+// resulting in ArrayIndexOutOfBoundsException. Your task is to handle these
+// exceptions within the recursive algorithm and ensure proper termination of recursion.\
+
+
+public class q18 {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        try {
+            printArray(arr, 0);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index out of bounds.");
+        }
+    }
+
+    public static void printArray(int[] arr, int index) {
+        System.out.println(arr[index]);
+        printArray(arr, index + 1);
+    }    
+}
