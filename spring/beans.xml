@@ -1,0 +1,9 @@
+<beans>
+<bean id="student" class="com.demo.Student">
+    <constructor-arg name="id" value=433 />
+    <constructor-arg name="name" value="John" />
+</bean>
+<bean id="iter" class="com.spring.College">
+    <property name="name" value="ITER College"/>
+</bean>
+</beans>
